@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Header.module.css";
-import XuchilLogo from "../../assets/images/Xuchil.svg";
+import styles from "../styles/Header.module.css";
+import XuchilLogo from "../assets/images/Xuchil.svg";
 
-const Header: React.FC = () => {
+const HeaderXuchil: React.FC = () => {
   return (
     <header className={styles.header}>
       <img src={XuchilLogo} alt="Logo de la empresa" className={styles.logo} />
@@ -10,4 +10,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default HeaderXuchil;
