@@ -1,0 +1,11 @@
+.button {
+    border-radius: 10px;
+    background-color: var(--color-green-dark);
+    color: var(--color-text-light);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.2s ease-in-out;
+}
+  
