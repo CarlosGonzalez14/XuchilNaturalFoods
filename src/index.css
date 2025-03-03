@@ -4,20 +4,12 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+  
   --color-background: #f6edeb;
   --color-secondary: #efd0ca;
   --color-accent: #ffb133;
-  --color-text: #050902;
+  --color-text-dark: #050902;
+  --color-text-light: #ffffff;
   --color-gray-light: #c1bcac;
   --color-gray-dark: #979b8d;
   --color-green-light: #5c7457;
@@ -92,21 +84,25 @@ p {
 .lato-bold-italic { font-weight: 700; font-style: italic; }
 .lato-black-italic { font-weight: 900; font-style: italic; }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-green-dark);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--color-secondary);
 }
 
 button {
@@ -116,27 +112,17 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--color-secondary);
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  color: var(--color-text-dark);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  border-color: var(--color-green-dark);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--color-green-dark);
 }
