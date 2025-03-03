@@ -3,11 +3,11 @@ import { Wheat, ClipboardList, Package, Truck, User } from "lucide-react";
 import "../styles/BottomTabBar.css";
 
 const tabs = [
-  { name: "ProcessControl", path: "/process-control", icon: <Wheat /> },
-  { name: "Logbook", path: "/logbook", icon: <ClipboardList /> },
-  { name: "Inventory", path: "/inventory", icon: <Package /> },
-  { name: "Orders", path: "/orders", icon: <Truck /> },
-  { name: "User", path: "/user", icon: <User /> },
+  { name: "Control de procesos", path: "/process-control", icon: <Wheat /> },
+  { name: "Bitácora", path: "/logbook", icon: <ClipboardList /> },
+  { name: "Inventario", path: "/inventory", icon: <Package /> },
+  { name: "Pedidos", path: "/orders", icon: <Truck /> },
+  { name: "Usuario", path: "/user", icon: <User /> },
 ];
 
 const BottomTabBar = () => {
@@ -20,7 +20,7 @@ const BottomTabBar = () => {
           className={({ isActive }) => (isActive ? "tab active" : "tab")}
         >
           <div className="tab-icon">{tab.icon}</div>
-          {/* <span className="tab-text">{tab.name}</span> */}
+          <span className="tab-text">{tab.name}</span> 
         </NavLink>
       ))}
     </nav>
