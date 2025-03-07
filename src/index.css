@@ -74,6 +74,12 @@ p {
   font-size: var(--font-size-p);
 }
 
+textarea {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-p);
+}
+
 .lato-thin { font-weight: 100; }
 .lato-light { font-weight: 300; }
 .lato-regular { font-weight: 400; }
