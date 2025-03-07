@@ -3,16 +3,15 @@
     color: white;
     border: none;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
     transition: background 0.3s ease;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: var(--font-size-h3);
   }
   
   .filterButton:hover {
@@ -37,8 +36,9 @@
     padding: 20px;
     text-align: center;
     min-width: 90%;
-    min-height: 90%;
+    height: 90%;
     align-items: flex-start;
+    overflow-y: auto;
   }
   
   .modal h2 {
