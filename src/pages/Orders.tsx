@@ -1,4 +1,7 @@
+import FilterButton from "../components/FilterButton";
 import TextField from "../components/TextField";
+import { monthFilterOptions, productFilterOptions, userFilterOptions } from "../constants/filterOptions";
+
 
 const Orders = () => {
     return (
@@ -8,6 +11,9 @@ const Orders = () => {
         <TextField 
           placeholder="Escribe aquí..." 
         />
+        <FilterButton title="Filtrar por producto" options={productFilterOptions} />
+        <FilterButton title="Filtrar por usuario" options={userFilterOptions} />
+        <FilterButton title="Filtrar por mes" options={monthFilterOptions} />
       </div>
     );
   };
